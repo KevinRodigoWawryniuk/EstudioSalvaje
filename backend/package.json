@@ -1,0 +1,24 @@
+{
+  "name": "esb",
+  "version": "1.0.0",
+  "description": "Desarrollo de tienda de venta de indumentaria ",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "dev": "nodemon index.js"
+  },
+  "author": "Kevin Rodrigo Wawryniuk",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^2.2.0",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.2",
+    "mysql": "^2.18.1",
+    "nodemailer": "^7.0.3",
+    "nodemon": "^3.1.10"
+  }
+}

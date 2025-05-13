@@ -1,0 +1,42 @@
+[
+    {
+        "nombre": "img1",
+        "archivo": "img1.png"
+    },
+    {
+        "nombre": "img2",
+        "archivo": "img2.png"
+    },
+    {
+        "nombre": "img3",
+        "archivo": "img3.png"
+    },
+    {
+        "nombre": "img4",
+        "archivo": "img4.png"
+    },
+    {
+        "nombre": "img5",
+        "archivo": "img5.png"
+    },
+    {
+        "nombre": "img6",
+        "archivo": "img6.png"
+    },
+    {
+        "nombre": "img7",
+        "archivo": "img7.png"
+    },
+    {
+        "nombre": "img8",
+        "archivo": "img8.png"
+    },
+    {
+        "nombre": "img9",
+        "archivo": "img9.png"
+    },
+    {
+        "nombre": "img10",
+        "archivo": "img10.png"
+    }
+]
