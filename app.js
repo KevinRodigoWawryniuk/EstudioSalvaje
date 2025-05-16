@@ -21,32 +21,43 @@ function MesclarImagnes(imagenes) {
 function mostrarImagenes(imagenes) {
     galeria.innerHTML = '';
     imagenes.forEach(imagen => {
-            const div = document.createElement('div');
-            const img = document.createElement('img');
-            img.src = `https://i.postimg.cc/${imagen.archivos}`;
-            img.alt = imagen.nombres;
-            img.loading = 'lazy';
-            div.appendChild(img);
-            // cuando pasa por ensima el mouse
-            // div.addEventListener('mouseover', () => {
-            //     div.style.width = '100%';
-            //     subtitel.style.display = 'block';
-            //     div.style.cursor = 'pointer'
-            // })
-            // cuando sale
-            // div.addEventListener('mouseout', () => {
-            //     div.style.width = '90%';
-            //     subtitel.style.display = 'none';
-            // })
-            // abrir WhatsApp
-            img.addEventListener('click', () => {
-                const numero = '5493764582381';
-                const urlImage = `https://i.postimg.cc/${img.src}`;
-                const mensaje = `Hola, quiero más información sobre esta imagen: ${urlImage}`;
-                const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
-                window.open(url, '_blank');
-            });
-            galeria.appendChild(div);
+        const div = document.createElement('div');
+        const p = document.createElement('p');
+        p.textContent = 'Hacer Pedido';
+        const img = document.createElement('img');
+        img.src = `https://i.postimg.cc/${imagen.archivos}`;
+        img.alt = imagen.nombres;
+        img.loading = 'lazy';
+        div.appendChild(p);
+        div.appendChild(img);
+        // cuando pasa por ensima el mouse
+        // div.addEventListener('mouseover', () => {
+        //     div.style.width = '100%';
+        //     subtitel.style.display = 'block';
+        //     div.style.cursor = 'pointer'
+        // })
+        // // cuando sale el mouse
+        // div.addEventListener('mouseout', () => {
+        //     div.style.width = '90%';
+        //     subtitel.style.display = 'none';
+        // })
+        // abrir WhatsApp
+        img.addEventListener('click', () => {
+            const numeroPrueba = '543764582381';
+            const numerodeempresa = '5493765159593'
+            const numero = numerodeempresa;
+            const mensaje = `Hola, quiero más información sobre esta imagen: https://i.postimg.cc/${imagen.archivos}`;
+            const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
+            window.open(url, '_blank');
+        });
+        p.addEventListener('click', () => {
+            const numero = '5493765159593';
+            const urlImage = `https://i.postimg.cc/${img.src}`;
+            const mensaje = `Hola, quiero más información sobre esta imagen: ${urlImage}`;
+            const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
+            window.open(url, '_blank');
+        });
+        galeria.appendChild(div);
     });
 };
 document.getElementById("botonr").addEventListener('click', () => {
